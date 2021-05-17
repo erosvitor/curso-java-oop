@@ -1,0 +1,126 @@
+
+CLASSES, ATRIBUTOS E MÉTODOS
+
+
+Descrição
+--------------------------------------------------------------------------------
+???
+
+ 
+Definindo uma classe
+--------------------------------------------------------------------------------
+
+public class Carro {
+
+}
+
+
+Adicionando atributos
+--------------------------------------------------------------------------------
+
+public class Carro {
+  public String marca;
+  public String modelo;
+  public String cor;
+}
+
+
+Utilizando os atributos
+--------------------------------------------------------------------------------
+
+public class Carro {
+  public String marca;
+  public String modelo;
+  public String cor;
+}
+
+...
+Carro carro1 = new Carro();
+carro1.marca = "Ford";
+carro1.modelo = "Fusion";
+carro1.cor = "Preta";
+
+
+Efetuando calculos
+--------------------------------------------------------------------------------
+
+public class Carro {
+  public String marca;
+  public String modelo;
+  public String cor;
+  public float capacidadeTanque;
+  public float kmPorLitro;
+}
+
+...
+Carro carro1 = new Carro();
+carro1.marca = "Ford";
+carro1.modelo = "Fusion";
+carro1.cor = "Preta";
+carro1.capacidadeTanque = 55;
+carro1.kmPorLitro = 8;
+
+float autonomia = carro1.capacidadeTanque * carro1.kmPorLitro;
+System.out.println("Autonomia do carro " + carro1.modelo + " é de " + autonomia);
+
+
+Métodos
+--------------------------------------------------------------------------------
+
+public class Carro {
+  public String marca;
+  public String modelo;
+  public String cor;
+  public float capacidadeTanque;
+  public float kmPorLitro;
+
+  public float calcularAutonomia() {
+    return capacidadeTanque * kmPorLitro;
+  }
+}
+
+...
+Carro carro1 = new Carro();
+carro1.marca = "Ford";
+carro1.modelo = "Fusion";
+carro1.cor = "Preta";
+carro1.capacidadeTanque = 55;
+carro1.kmPorLitro = 8;
+
+float autonomia = carro1.calcularAutonomia();
+System.out.println("Autonomia do carro " + carro1.modelo + " é de " + autonomia);
+
+
+Métodos e Parâmetros
+--------------------------------------------------------------------------------
+
+public class Carro {
+  public String marca;
+  public String modelo;
+  public String cor;
+  public float capacidadeTanque;
+  public float kmPorLitro;
+
+  public float calcularAutonomia() {
+    return capacidadeTanque * kmPorLitro;
+  }
+
+  public float calcularCombustivel(float km) {
+    return km / kmPorLitro;
+  }
+}
+
+...
+Carro carro1 = new Carro();
+carro1.marca = "Ford";
+carro1.modelo = "Fusion";
+carro1.cor = "Preta";
+carro1.capacidadeTanque = 55;
+carro1.kmPorLitro = 8;
+
+float autonomia = carro1.calcularAutonomia();
+System.out.println("Autonomia do carro " + carro1.modelo + " é de " + autonomia);
+
+float quilometragem = 400;
+float qtdeCombustivel = carro1.calcularCombustivel(quilometragem);
+System.out.println("Para uma viagem de " + quilometragem + "km, são necessários " + qtdeCombustivel + " litros de combustível");

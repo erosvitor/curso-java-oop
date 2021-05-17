@@ -1,0 +1,57 @@
+
+CONSTRUTORES E SOBRECARGA
+
+
+Descrição
+--------------------------------------------------------------------------------
+???
+
+
+Declarando um construtor
+--------------------------------------------------------------------------------
+
+public class Aluno
+{
+  public String nome;
+  public boolean ativo;
+
+  public Aluno() {
+    ativo = true;
+  }
+}
+
+...
+Aluno aluno1 = new Aluno();
+if (aluno1.ativo) {
+  System.out.println("Aluno esta ativo");
+} else {
+  System.out.println("Aluno não esta ativo");
+}
+
+
+Sobrecarregando o construtor
+--------------------------------------------------------------------------------
+
+public class Aluno
+{
+  public String nome;
+  public boolean ativo;
+
+  public Aluno() {
+    ativo = true;
+  }
+
+  public Aluno(String nome) {
+    this.nome = nome;
+    this.ativo = true;
+  }
+}
+
+...
+Aluno aluno1 = new Aluno("Fulano da Silva");
+if (aluno1.ativo) {
+  System.out.println("Aluno esta ativo");
+} else {
+  System.out.println("Aluno não esta ativo");
+}
+

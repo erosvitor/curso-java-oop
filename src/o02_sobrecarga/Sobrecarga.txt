@@ -1,0 +1,59 @@
+
+SOBRECARGA
+
+
+Descrição
+--------------------------------------------------------------------------------
+???
+
+
+public class FigurasPlanas
+{
+  public int calcularAreaQuadrado(int lado) {
+    return lado * lado;
+  }
+
+  public float calcularAreaCirculo(float raio) {
+    return 3.14f * (raio * raio);
+  }
+}
+
+
+Para calcular áreas de quadrados contendo lados decimais...
+
+public class FigurasPlanas
+{
+  public int calcularAreaQuadrado(int lado) {
+    return lado * lado;
+  }
+
+  public float calcularAreaQuadrado(float lado) {
+    return lado * lado;
+  }
+
+  public float calcularAreaCirculo(float raio) {
+    return 3.14 * (raio * raio);
+  }
+}
+
+
+Para calcular áreas de círculos com valores de PI diferentes.
+
+public class FigurasPlanas
+{
+  public int calcularAreaQuadrado(int lado) {
+    return lado * lado;
+  }
+
+  public float calcularAreaQuadrado(float lado) {
+    return lado * lado;
+  }
+
+  public float calcularAreaCirculo(float raio) {
+    return 3.14 * (raio * raio);
+  }
+
+  public float calcularAreaCirculo(float raio, float pi) {
+    return pi * (raio * raio);
+  }
+}
