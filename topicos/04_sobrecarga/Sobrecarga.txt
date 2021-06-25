@@ -1,11 +1,18 @@
 
-SOBRECARGA
-
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS JAVA - SOBRECARGA
+====================================================================================================
 
 Descrição
---------------------------------------------------------------------------------
-???
+----------------------------------------------------------------------------------------------------
+A sobrecarga é um recurso que permite que dois ou mais métodos tenham o mesmo nome, mas com
+parâmetros diferentes.
 
+Os parâmetros podem ser diferentes em dois modos: na quantidade ou no tipo.
+
+
+Implementando a sobrecarga
+----------------------------------------------------------------------------------------------------
 
 public class FigurasPlanas
 {
@@ -57,3 +64,4 @@ public class FigurasPlanas
     return pi * (raio * raio);
   }
 }
+

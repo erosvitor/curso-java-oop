@@ -1,14 +1,20 @@
 
-CONSTRUTORES E SOBRECARGA
-
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS JAVA - CONSTRUTORES e SOBRECARGA
+====================================================================================================
 
 Descrição
---------------------------------------------------------------------------------
-???
+----------------------------------------------------------------------------------------------------
+O construtor é um recurso da programação orientada a objetos utilizado para preparar a objeto para
+uso. No construtor pode-se atribuir valores default aos atributos, pode-se também executar alguma
+operação pertinente ao objeto.
+
+O construtor é executado apenas uma vez quando o objeto é criado. Não pode ser invocado manualmente
+após a criação do objeto.
 
 
 Declarando um construtor
---------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 
 public class Aluno
 {
@@ -16,7 +22,7 @@ public class Aluno
   public boolean ativo;
 
   public Aluno() {
-    ativo = true;
+    this.ativo = true;
   }
 }
 
@@ -38,7 +44,7 @@ public class Aluno
   public boolean ativo;
 
   public Aluno() {
-    ativo = true;
+    this.ativo = true;
   }
 
   public Aluno(String nome) {

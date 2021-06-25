@@ -1,8 +1,29 @@
 
-MÉTODOS ESTÁTICOS
-
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS JAVA - MÉTODOS ESTÁTICOS
+====================================================================================================
 
 Descrição
---------------------------------------------------------------------------------
-???
+----------------------------------------------------------------------------------------------------
+Métodos estáticos são métodos que não necessitam que a classe seja instanciada para serem utilizados.
+
+ 
+Criando métodos estáticos
+----------------------------------------------------------------------------------------------------
+
+public class AreasFiguras {
+  
+  public static float calcularAreaQuadrado(float lado) {
+    return lado * lado;
+  }
+
+  public static float calcularAreaTriangulo(float base, float altura) {
+    return (base * altura) / 2;
+  }
+
+}
+
+
+float areaQuadrado = AreasFiguras.calcularAreaQuadrado(20);
+float areaTriangulo = AreasFiguras.calcularAreaTriangulo(10, 5);
 

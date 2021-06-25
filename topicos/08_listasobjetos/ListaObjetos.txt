@@ -1,0 +1,51 @@
+
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS JAVA - LISTA DE OBJETOS
+====================================================================================================
+
+Descrição
+----------------------------------------------------------------------------------------------------
+A linguagem Java disponibiliza a classe 'List' para armazenamento de objetos. 
+
+
+Lista de objetos string
+----------------------------------------------------------------------------------------------------
+
+String str;
+    
+// Até o Java 1.4
+List list = new ArrayList();
+list.add("hello");
+list.add("hi");
+Iterator iter = list.iterator();
+while (iter.hasNext()) {
+  str = (String)iter.next();
+  System.out.println(str);
+}  
+
+// A partir do Java 1.5 (Generics)
+List<String> list2 = new ArrayList<String>();
+list2.add("good morning");
+list2.add("good afternoon");
+Iterator<String> iter2 = list2.iterator();
+while (iter2.hasNext()) {
+  str = iter2.next();
+  System.out.println(str);
+}
+
+
+For Each
+----------------------------------------------------------------------------------------------------
+
+int numbers[] = {12, 13, 14, 44};
+
+// Até o Java 1.4
+for (int i=0; i < numbers.length; i++) {
+  System.out.println(numbers[i]);
+}
+
+// A partir do Java 1.5
+for (int num : numbers) {
+  System.out.println(num);
+}
+

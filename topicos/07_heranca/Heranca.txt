@@ -1,0 +1,73 @@
+
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS JAVA - HERANÇA
+====================================================================================================
+
+Descrição
+----------------------------------------------------------------------------------------------------
+A herança é um recurso da orientação a objetos que permite que uma classe herde atributos e métodos
+de outra classe.
+
+
+Cenário para aplicação da herança
+----------------------------------------------------------------------------------------------------
+
+Dados do Cliente
+- Nome, Endereço, CPF
+
+Dados do Fornecedor
+- Nome, Endereço, CNPJ
+
+
+No levantamento acima observa-se que alguns dados se repetem para Clientes e Fornecedores. Pode-se
+aplicar a herança para remover a duplicidade dos dados, diminuindo a complexidade das classes e 
+facilitando a implementação do código.
+
+Dados Pessoa
+- Nome, Endereço
+
+Dados Cliente (é uma pessoa)
+- CPF
+
+Dados Fornecedor (é uma pessoa)
+- CNPJ
+
+
+Aplicando a herança
+----------------------------------------------------------------------------------------------------
+
+public class Pessoa {
+  private String nome;
+
+  // Métodos getters e setters
+}
+
+public class PessoaFisica extends Pessoa {
+  private String cpf;
+
+  // Métodos getters e setters
+}
+
+public class PessoaJuridica extends Pessoa {
+  private String cnpj;
+
+  // Métodos getters e setters
+}
+
+PessoaFisica pf = new PessoaFisica();
+pf.setNome("Fulano da Silva");
+pf.setCpf("304.349.920-46");
+System.out.println(String.format("%s, %s", pf.nome, pf.cpf"));
+
+PessoaJuridica pj = new PessoaJuridica();
+pj.setNome("Empresa XYZ Ltda");
+pj.setCnpj("93.064.305/0001-48");
+System.out.println(String.format("%s, %s", pj.nome, pj.cnpj"));
+
+
+Benefícios da herança
+----------------------------------------------------------------------------------------------------
+- Redundância de dados
+- Implementação
+- Manutenção
+

@@ -5,17 +5,17 @@ O **JavaOOPCurso** é um projeto em forma de curso que reúne tópicos sobre os 
 
 O projeto contempla teoria, exemplos, exercícios e respostas. É ideal para ser utilizado por professores e instrutores da linguagem Java.
 
-
 ## Tópicos
-* Classes, atributos e métodos
-* Sobrecarga
+* Classes
+* Atributos
+* Métodos
 * Construtores
-* Destrutores
+* Sobrecarga de construtores
+* Sobrecarga de métodos
 * Encapsulamento
 * Métodos estáticos
+* Herança
 * Lista de objetos
-* Equals e Hashcode
-* Reflection
 
 ## Histórico de lançamentos
 
