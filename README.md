@@ -1,7 +1,7 @@
 # JavaOOPCurso
 
 ## Descrição
-O **JavaOOPCurso** é um projeto em forma de curso que reúne tópicos sobre os fundamentos da orientação a objetos na linguagem Java.
+Projeto curso que reúne tópicos sobre os fundamentos da orientação a objetos na linguagem Java.
 
 O projeto contempla teoria, exemplos, exercícios e respostas. É ideal para ser utilizado por professores e instrutores da linguagem Java.
 
