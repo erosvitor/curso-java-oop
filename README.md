@@ -1,5 +1,5 @@
 ## Sobre
-O projeto é um curso que ensina os fundamentos da programação orientada a objetos na linguagem Java.
+O projeto contém tópicos sobre os fundamentos da programação orientada a objetos na linguagem Java.
 
 ## Conteúdo do curso
 * Classes
