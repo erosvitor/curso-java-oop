@@ -1,0 +1,64 @@
+
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS JAVA - INTERFACES
+====================================================================================================
+
+Descrição
+----------------------------------------------------------------------------------------------------
+Uma interface é um recurso da orientação a objetos utilizado para definir o que uma determinada 
+classe deve fazer não se preocupando em como será feito.
+
+
+Exemplo
+----------------------------------------------------------------------------------------------------
+Armazenar vários quadrados e retangulos numa lista e depois mostrar a área de cada um dos polígonos. 
+
+
+public interface Polygon {
+  Double getArea();
+}
+
+public class Square implements Polygon {
+  private Double side;
+
+  public Square(Double side) {
+    this.side = side;
+  }
+
+  @Override
+  public Double getArea() {
+    return side * side;
+   }
+}
+
+public class Rectangle implements Polygon {
+  private Double length;
+  private Double breadth;
+
+  Rectangle(Double length, Double breadth) {
+    this.length = length;
+    this.breadth = breadth;
+  }
+
+  @Override
+  public Double getArea() {
+    return length * breadth;
+  }
+}
+
+public class Interfaces {
+
+  public static void main(String[]args){
+    Polygon s1=new Square(4.0);
+    Polygon r1=new Rectangle(5.0, 7.0);
+
+    List<Polygon> polygons = new ArrayList<>();
+    polygons.add(s1);
+    polygons.add(r1);
+
+    for (Polygon polygon : polygons) {
+      System.out.println(polygon.getArea());
+    }
+  }
+}
+

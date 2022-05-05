@@ -56,8 +56,8 @@ public class Aluno
 ...
 Aluno aluno1 = new Aluno("Fulano da Silva");
 if (aluno1.ativo) {
-  System.out.println("Aluno esta ativo");
+  System.out.println("O aluno " + aluno1.nome + " esta ativo");
 } else {
-  System.out.println("Aluno não esta ativo");
+  System.out.println("O aluno " + aluno1.nome + " não esta ativo");
 }
 

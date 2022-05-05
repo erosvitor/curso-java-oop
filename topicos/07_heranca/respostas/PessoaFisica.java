@@ -1,4 +1,3 @@
-package testes;
 
 public class PessoaFisica extends Pessoa {
 

@@ -1,4 +1,3 @@
-package testes;
 
 public class Funcionario extends PessoaFisica {
 

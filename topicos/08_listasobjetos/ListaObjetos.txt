@@ -5,47 +5,58 @@ CURSO ORIENTAÇÃO A OBJETOS JAVA - LISTA DE OBJETOS
 
 Descrição
 ----------------------------------------------------------------------------------------------------
-A linguagem Java disponibiliza a classe 'List' para armazenamento de objetos. 
+A linguagem Java disponibiliza a classe 'ArrayList' para armazenamento de objetos. 
 
 
 Lista de objetos string
 ----------------------------------------------------------------------------------------------------
 
-String str;
-    
-// Até o Java 1.4
-List list = new ArrayList();
-list.add("hello");
-list.add("hi");
-Iterator iter = list.iterator();
-while (iter.hasNext()) {
-  str = (String)iter.next();
-  System.out.println(str);
-}  
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
-// A partir do Java 1.5 (Generics)
-List<String> list2 = new ArrayList<String>();
-list2.add("good morning");
-list2.add("good afternoon");
-Iterator<String> iter2 = list2.iterator();
-while (iter2.hasNext()) {
-  str = iter2.next();
-  System.out.println(str);
-}
+public class ListaStrings {
 
+  public static void main(String[] args) {
+    // Criando uma lista vazia para strings
+    List<String> peixes = new ArrayList<>();
 
-For Each
-----------------------------------------------------------------------------------------------------
+    // Adicionando valores
+    peixes.add("Robalo");
+    peixes.add("Corvina");
+    peixes.add("Bagre");
+    peixes.add("Salmão");
+    peixes.add("Tilápia");
 
-int numbers[] = {12, 13, 14, 44};
+    // Removendo valor
+    peixes.remove("Corvina");
 
-// Até o Java 1.4
-for (int i=0; i < numbers.length; i++) {
-  System.out.println(numbers[i]);
-}
+    // Listando conteúdo - método 1
+    for (String peixe : peixes) {
+      System.out.println(peixe);
+    }
+    System.out.println();
 
-// A partir do Java 1.5
-for (int num : numbers) {
-  System.out.println(num);
+    // Listando conteúdo - método 2
+    peixes.forEach(peixe -> System.out.println(peixe));
+    System.out.println();
+
+    // Listando conteúdo - método 3
+    for (int i=0; i < peixes.size(); i++) {
+      System.out.println(peixes.get(i));
+    }
+    System.out.println();
+
+    // Ordenando ascendente
+    Collections.sort(peixes);
+    peixes.forEach(peixe -> System.out.println(peixe));
+    System.out.println();
+
+    // Ordenando descendente
+    Collections.reverse(peixes);
+    peixes.forEach(peixe -> System.out.println(peixe));
+    System.out.println();
+  }
+
 }
 
